@@ -4,8 +4,7 @@ const navdata = ["Home", "About", "Admission", "Events", "Contact"]
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center md:p-1 sticky top-0 z-50 backdrop-blur-md
-bg-white/30 p-2 px-3">
+    <nav className="flex justify-between items-center md:p-2 sticky top-0 z-50 backdrop-blur-md bg-transparent p-2 px-3">
       <div className="md:w-32 w-28">
         <img src="/Logo.png" alt="logo" className="object-contain h-full w-full" />
       </div>
@@ -18,16 +17,6 @@ bg-white/30 p-2 px-3">
           ))}
         </ul>
       </div>
-      <div className="md:flex gap-2 items-center hidden">
-        <button className="border border-black px-5 py-2 rounded-full hover:bg-teal-800 hover:text-white transition duration-300 font-semibold">
-          Login
-        </button>
-        <button className="border border-black px-5 py-2 rounded-full hover:bg-teal-700 hover:text-white transition duration-300 font-semibold">
-          Register
-        </button>
-
-      </div>
-
       <div className="md:hidden text-2xl cursor-pointer">
         <RxHamburgerMenu />
       </div>

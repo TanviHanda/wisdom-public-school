@@ -38,15 +38,15 @@ export default function Events() {
 
 
   return (
-    <div className="w-full min-h-screen bg-teal-400 text-white px-4 py-12">
+    <div className="w-full min-h-screen bg-zinc-50 text-slate-900 px-4 py-12">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold">Events</h1>
-        <p className="text-teal-100 mt-2">
+        <p className="text-teal-800 mt-2">
           Stay updated with school activities
         </p>
       </div>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-        <div className="bg-teal-900/40 p-6 rounded-xl shadow-lg">
+        <div className="bg-white p-6 rounded-xl shadow-lg border border-zinc-100">
           <h2 className="text-xl font-bold mb-6">
             Upcoming Activities
           </h2>
@@ -54,7 +54,7 @@ export default function Events() {
             {upcomingEvents.map((event, i) => (
               <div
                 key={i}
-                className="bg-teal-800/40 p-4 rounded-xl hover:scale-[1.02] transition duration-300"
+                className="bg-teal-50 p-4 rounded-xl hover:scale-[1.02] transition duration-300 border border-zinc-100"
               >
                 <img
                   src={event.image}
@@ -64,14 +64,14 @@ export default function Events() {
                 <h3 className="font-semibold text-lg">
                   {event.title}
                 </h3>
-                <p className="text-sm text-gray-200">
+                <p className="text-sm text-slate-600">
                   {event.desc}
                 </p>
               </div>
             ))}
           </div>
         </div>
-        <div className="bg-teal-900/40 p-6 rounded-xl shadow-lg">
+        <div className="bg-white p-6 rounded-xl shadow-lg border border-zinc-100">
           <h2 className="text-xl font-bold mb-6">
             Past Events
           </h2>
@@ -79,7 +79,7 @@ export default function Events() {
             {pastEvents.map((event, i) => (
               <div
                 key={i}
-                className="bg-teal-800/40 p-4 rounded-xl hover:scale-[1.02] transition duration-300"
+                className="bg-teal-50 p-4 rounded-xl hover:scale-[1.02] transition duration-300 border border-zinc-100"
               >
                 <img
                   src={event.image}
@@ -89,7 +89,7 @@ export default function Events() {
                 <h3 className="font-semibold text-lg">
                   {event.title}
                 </h3>
-                <p className="text-sm text-gray-200">
+                <p className="text-sm text-slate-600">
                   {event.desc}
                 </p>
               </div>

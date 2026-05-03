@@ -22,13 +22,13 @@ export default function Admission() {
           return (
             <div
               key={i}
-              className="flex flex-col items-center text-center bg-teal-800/30 p-4 rounded-xl shadow-md 
+              className="flex flex-col items-center text-center bg-white/10 p-4 rounded-xl shadow-md 
                    w-56 h-56 flex-shrink-0 md:flex-1"
             >
               <h2 className="md:text-xl font-bold mb-2">
                 {item.step}.
               </h2>
-              <div className="p-4 rounded-xl bg-gray-200 text-teal-600 mb-3 text-2xl">
+              <div className="p-4 rounded-xl bg-white text-teal-700 mb-3 text-2xl">
                 {item.icon}
               </div>
               <h3 className="font-semibold text-lg">
